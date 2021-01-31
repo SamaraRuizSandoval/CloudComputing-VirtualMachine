@@ -1,0 +1,57 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'info/style.css' %}">
+<html>
+    <head>
+        <title>Samara's Virtual Machine</title>
+    </head>
+    <body>
+        <div class = "hero">
+            <div class="navbar">
+                <img style=" width: 300px; cursor: pointer;" src="../../static/info/images/fiu_logo.png">
+                <button type="button">Sign Up</button>
+            </div>
+            <div class="content">
+                <p>Hi! Welcome to</p>
+                <h1> CEN 4083's Assignment 2</h1>
+
+                <ul>
+                    <li><b>IP Address: </b> &nbsp;&nbsp; {{ IPAddr }} </li>
+                    <li><b>Remote Port: </b> &nbsp;&nbsp; {{ remotePort }}</li>
+                    <li><b>Request Method: </b> &nbsp;&nbsp; {{ reqMethod }}</li>
+                    <li><b>Server Protocol:</b> &nbsp;&nbsp; {{ protocol }}</li>
+                    <li><b>Server Host:</b> &nbsp;&nbsp; {{ serverHost }}</li>
+                    <li><b>Your Device:</b> &nbsp;&nbsp; {{ device_type}}</li>
+                    <li><b>User Agent:</b> &nbsp;&nbsp;{{browser_type}} {{browser_version}}</li>
+                    <li><b>Your OS:</b> &nbsp;&nbsp; {{os_type}} {{os_version}}</li>
+                </ul>
+                <p><br></p>
+                <button type="button">Take a tour</button>
+            </div>
+            <div class="myInfo">
+                <p>Website created by</p>
+                <h2> Samara Ruiz Sandoval</h2>
+            </div>
+            <div class="side-bar">  
+                <img style=" display: block; width: 25px; margin: 40px auto 0; cursor: pointer;" src="../../static/info/images/menu.png">
+                <div class="social-links">
+                    <img src="../../static/info/images/fb.png">
+                    <img src="../../static/info/images/ig.png">
+                    <img src="../../static/info/images/tw.png">
+                </div>
+                <div class="useful-links">
+                    <img src="../../static/info/images/share.png">
+                    <img src="../../static/info/images/info.png">
+                </div>
+            </div>
+            <div class="bubbles">
+                <img src="../../static/info/images/bubble.png">
+                <img src="../../static/info/images/bubble.png">
+                <img src="../../static/info/images/bubble.png">
+                <img src="../../static/info/images/bubble.png">
+                <img src="../../static/info/images/bubble.png">
+                <img src="../../static/info/images/bubble.png">
+                <img src="../../static/info/images/bubble.png">
+            </div>
+        </div>
+    </body>
+</html>
